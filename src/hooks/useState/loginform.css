@@ -1,0 +1,140 @@
+/* =======================
+   AUTH COMMON LAYOUT
+======================= */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* =======================
+   AUTH CARD
+======================= */
+
+.card {
+  width: 360px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* =======================
+   HEADINGS
+======================= */
+
+.card h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+/* =======================
+   FORM
+======================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =======================
+   LABELS
+======================= */
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* =======================
+   INPUTS
+======================= */
+
+input {
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 16px;
+  transition: all 0.25s ease;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  outline: none;
+  background-color: #eef2ff;
+  border-color: #667eea;
+  color: #111827;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.25);
+}
+
+/* Autofill fix */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #111827;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* =======================
+   BUTTON
+======================= */
+
+button {
+  height: 46px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.45);
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media (max-width: 420px) {
+  .card {
+    width: 100%;
+    padding: 22px;
+  }
+}
+input[type="password"] {
+  -webkit-text-security: disc;
+  color: #111827; /* 👈 FIX */
+}
+input {
+  background-color: #111112;
+  color: #111827;
+}
+
+input:focus {
+  background-color: #eef2ff; /* 👈 SAME for ALL inputs */
+  outline: none;
+  border-color: #667eea;
+}
+message{
+    color: #111827;
+}
